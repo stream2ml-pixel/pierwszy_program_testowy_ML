@@ -1,0 +1,16 @@
+{$AT TfCzytajCos}
+{$AT TWindowPlugins}
+
+program test_plugin_crm;
+
+procedure pokaz_komunikat;
+begin
+  inf300('              (__)    '#13#10+
+         '     `\---- (oo)'#13#10+
+         '       ||      (__)'#13#10+
+         '       ||w--||');
+end;
+
+begin
+  pokaz_komunikat;
+end.
