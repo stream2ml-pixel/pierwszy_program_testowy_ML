@@ -11,20 +11,19 @@ begin
     okno.Caption := 'Test pluginu';
 
     okno.SqlSet(
-      '1 as ID, ''To jest testowe okno pluginu.'' as INFO',  // SELECT
-      'rdb$database',                                        // FROM
-      '',                                                    // WHERE
-      '',                                                    // GROUP BY
-      '',                                                    // HAVING
-      ''                                                     // ORDER BY
+      '1 as ID, ''To jest testowe okno pluginu.'' as INFO', // Pole nazywa się INFO
+      'rdb$database',
+      '',
+      '',
+      '',
+      ''
     );
 
     okno.IDColumns := 'ID';
-    okno.AddFields('Informacja', 'INFO', '');
 
     if okno.ShowWindowCheckStr(aWhere) then
     begin
-      // nic nie robimy – samo wyświetlenie okna
+       // Logika po zamknięciu okna
     end;
   finally
     okno.Free;
